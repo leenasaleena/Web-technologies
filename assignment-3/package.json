@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "mongoose": "^8.23.1"
+  },
+  "name": "beehive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
