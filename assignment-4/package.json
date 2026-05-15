@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongoose": "^8.0.0",
+    "multer": "^1.4.5-lts.1"
+  },
+  "name": "beehive-dental",
+  "version": "1.0.0",
+  "description": "Beehive Dental with Admin Panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "admin-panel",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC"
+}
