@@ -1,0 +1,39 @@
+<header class="header">
+    <div class="container header-content">
+        <div class="logo">
+            <img src="/images/beehive-dental-horizontal.png" alt="Beehive Dental Logo">
+        </div>
+
+        <nav class="nav" id="main-nav">
+            <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/services">SERVICES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#patients">NEW PATIENTS</a></li>
+                <li><a href="#resources">RESOURCES</a></li>
+                <li><a href="tel:9057885555">(905) 788-5555</a></li>
+                <!-- Dynamic Auth Links -->
+                <% if (user) { %>
+                    <li><a href="/auth/profile">PROFILE</a></li>
+                    <li><a href="/auth/logout">LOGOUT</a></li>
+                    <% if (user.role === 'admin') { %>
+                        <li><a href="/admin">ADMIN</a></li>
+                    <% } %>
+                <% } else { %>
+                    <li><a href="/auth/login">LOGIN</a></li>
+                    <li><a href="/auth/register">REGISTER</a></li>
+                <% } %>
+            </ul>
+        </nav>
+
+        <div class="book-btn-wrapper">
+            <a href="#book" class="btn-book">BOOK ONLINE</a>
+        </div>
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </div>
+</header>
